@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+
+  background: rgb(36, 35, 34);
+  background: linear-gradient(
+    338deg,
+    rgb(17, 17, 17) 4%,
+    rgba(60, 60, 77, 1) 43%,
+    rgb(34, 34, 32) 100%
+  );
+
+  padding: 10px;
+}
+.todoApp {
+  max-width: 500px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(12, 17, 16, 1) 19%,
+    rgba(71, 98, 103, 1) 100%
+  );
+
+  border: 1px solid rgb(127, 133, 127);
+  -webkit-box-shadow: 1px 5px 31px 2px rgba(62, 137, 187, 0.78);
+  -moz-box-shadow: 1px 5px 31px 2px rgba(43, 47, 48, 0.78);
+  box-shadow: 1px 5px 31px 2px rgba(73, 136, 179, 0.78);
+  transition: 1s;
+  margin: 20px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+.todoApp h1 {
+  color: white;
+  display: flex;
+  margin: auto;
+
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 800;
+  text-shadow: 0 0 7px #84b1b1, 0 0 10px rgb(238, 243, 243), 0 0 21px #f3e3e3,
+    0 0 42px rgb(52, 121, 121), 0 0 82px rgb(83, 9, 50),
+    0 0 92px rgb(220, 240, 216), 0 0 102px rgb(192, 194, 216),
+    0 0 15px rgb(221, 221, 230);
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(182, 195, 199);
+  border-radius: 30px;
+
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 14px;
+  color: rgb(38, 75, 107);
+}
+button {
+  border: none;
+  outline: none;
+  padding: 16px 40px;
+  border-radius: 40px;
+  background: gainsboro;
+  color: rgb(4, 31, 31);
+  font-size: 17px;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  font-size: 25px;
+  padding: 12px 8px 12px 15px;
+  width: 90%;
+  color: rgb(201, 194, 204);
+  user-select: none;
+  background: transparent;
+  opacity: 0.6;
+  margin-bottom: 5px;
+}
+
+.xmark {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.xmark .fa-times {
+  right: 10px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  line-height: 40px;
+  text-align: center;
+}
+.xmark .fa-times:hover {
+  background: rgb(7, 43, 77);
+  border-radius: 30%;
+}
